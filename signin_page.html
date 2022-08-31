@@ -1,0 +1,84 @@
+<?php include('functions.php') ?>
+<html>
+
+<head>
+
+<title>
+registration form
+
+</title>
+<link rel="stylesheet" href="css/st1.css">
+<div class="registration-form">
+
+</head>
+<br>
+<br>
+<body>
+<h1>ENTER YOUR DETAILS</h1>
+
+
+<form action="insert_main1.php" method="POST">
+<lable> NAME </lable>
+<input type="text" name="Name" placeholder="abc" required/>
+
+<br>
+<br>
+<lable> USERNAME</lable>
+<input type="text" name="username" placeholder="abc_15"required/>
+<br>
+
+<br>
+<lable> PASSWORD </lable>
+<input type="password" name="password" placeholder="password"required/>
+<br>
+<br>
+
+				<label>GENDER </label>
+				<br>
+					<input type="radio" name="gender" value="m" required>Male
+					&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="gender" value="f" required>Female
+					&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="gender" value="o" required>Others
+				
+			
+
+<br><br>
+
+				<label>EMAIL </label>
+				<input type="email" name="email" placeholder="abc@gmail.com"required>
+			<br><br>
+
+				<label>PHONE NUMBER </label>
+				
+					<select name="phonecode" required>
+						<option selected hidden value="">select code</option>
+						<option value="91">91</option>
+						<option value="81">81</option>
+						<option value="71">71</option>
+						<option value="61">61</option>
+					</select>
+					<input  name="phone" placeholder="0987654321"required>
+				
+			
+			<br>
+<br>
+<lable>who was your first childhood friend?</lable>
+<input type="password" name="cd" placeholder="abc"required/>
+<br>
+<br>
+<lable>what is your least favourite nickname? </lable>
+<input type="password" name="fav" placeholder="xyz" required/>
+<br>
+<br>
+<input type="submit" value="submit" required/><br>
+<br>
+<p>
+		Already a member? <a href="login_page.html">Log in </a>
+	</p>
+
+
+</form>
+</div>
+</body>
+</html>
